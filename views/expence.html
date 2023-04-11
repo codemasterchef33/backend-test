@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Full Stack Expence Tracker App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+  </head>
+  <body>
+    <header>
+      
+      <title>Expense Tracker</title>
+      <h1 class="header text-center bg-danger text-white pt-3 pb-3">
+        Expense tracker 
+      </h1>
+    </header>
+
+    <div class="container shadow-lg p-3 mb-5 bg-body rounded border border-white">
+      <form id="my-form"class="mb-5">
+        <h1>Add Expence</h1>
+        <div class="msg row mb-2"></div>
+        <div class="form-group col-md-4">
+          <label for="amount" class="form-label">Selling Price :</label>
+          <input type="number" class="form-control"  id="amount" name="amount" placeholder="500">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="description" class="form-label">Product name:</label>
+          <input type="text" class="form-control"  id="description" name="description" placeholder="Pizza">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="categary" class="form-label">Choose a Categary :</label>
+            <select name="categary" id="categary" class="form-control" name="categary">
+                
+                <option value="Electronicitem">Electronic item</option>
+                <option value="food">food item</option>
+                <option value="skin">skin care item</option>
+                
+            </select>
+        </div>
+        <input type="submit" id="btn" value="Add Expence" class="submit-button text-center btn btn-primary">
+      </form>
+      <h1>Electronic item</h1>
+      <ul id="users" class="list list-group ml-15 mr-15"></ul>
+      <h1>Food item</h1>
+      <ul id="users1" class="list1 list-group ml-15 mr-15"></ul>
+      <h1>Skincare  item</h1>
+      <ul id="users2" class="list2 list-group ml-15 mr-15"></ul>
+
+    </div>
+    
+    <script src="expence.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.js"></script>
+    
+  </body>
+</html>
